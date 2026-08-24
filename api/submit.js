@@ -10,14 +10,17 @@ module.exports = async function handler(req, res) {
     const name = clean(body.name, 120);
     const phone = clean(body.phone, 40);
     const city = clean(body.city, 120);
+    const email = clean(body.email, 254).toLowerCase();
     const concern = clean(body.concern, 500);
 
     if (!name || !phone || !city) return json(res, 400, { error: 'Name, phone and city are required.' });
     if (name.length < 2 || phone.length < 7 || city.length < 2) return json(res, 400, { error: 'Please provide valid details.' });
+    if (email && !/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/.test(email)) return json(res, 400, { error: 'Please provide a valid email address.' });
 
     const payload = {
       name,
       phone,
+      email,
       city,
       concern,
       product: 'Gengold Eye Wonder+',
