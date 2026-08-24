@@ -1,0 +1,9 @@
+{
+  "name": "gengold-eye-wonder-landing",
+  "private": true,
+  "version": "2.0.0",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "firebase-admin": "^13.6.0"
+  }
+}
