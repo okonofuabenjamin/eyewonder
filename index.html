@@ -29,6 +29,24 @@
     footer{padding:55px 0 30px;background:#050e0a;border-top:1px solid rgba(255,255,255,.08)}.footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:flex-start}.footer-brand{font:500 22px 'Playfair Display'}.footer-copy{max-width:580px;color:#697a70;font-size:11px;line-height:1.8}.footer-bottom{margin-top:35px;padding-top:18px;border-top:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;color:#4e6156;font-size:10px}.float-wa{position:fixed;right:22px;bottom:22px;width:57px;height:57px;border-radius:50%;background:#25d366;display:grid;place-items:center;z-index:90;box-shadow:0 18px 35px rgba(0,0,0,.35);transition:.2s}.float-wa:hover{transform:translateY(-4px) scale(1.03)}.float-wa svg{width:27px}.mobile-cta{display:none}
     @media(max-width:980px){.navlinks{display:none}.hero-grid,.proof-grid,.lead-grid{grid-template-columns:1fr}.hero{padding-top:125px}.hero-stage{min-height:600px}.experience-grid{grid-template-columns:1fr}.feature.big{grid-row:auto;min-height:500px}.feature.big h3{margin-top:300px}.condition-grid{grid-template-columns:repeat(2,1fr)}.how-grid{grid-template-columns:repeat(2,1fr)}.product-frame{min-height:500px}.product-frame img{min-height:500px}.lead-grid{gap:40px}}
     @media(max-width:620px){.wrap{width:min(100% - 28px,1180px)}.navin{height:66px}.brand{font-size:17px}.navcta{padding:10px 14px}.hero{padding:110px 0 50px}.hero-grid{gap:10px}h1{font-size:52px}.hero-copy{font-size:16px}.hero-actions .btn{width:100%}.hero-stage{min-height:560px}.video-shell{width:260px;border-radius:31px}.video-shell video{border-radius:24px}.orb{width:430px;height:430px}.orbit{width:360px;height:360px}.fc1{right:-4%;top:14%}.fc2{left:-2%;bottom:11%}.float-card{font-size:10px}.section-head{margin-bottom:34px}.section-head h2{font-size:40px}.experience-grid{gap:12px}.feature{min-height:280px;padding:24px}.feature.big{min-height:460px}.feature.big h3{margin-top:275px}.eye-orb{width:210px;height:135px;top:105px;right:22px}.facts{grid-template-columns:1fr}.condition-grid,.how-grid{grid-template-columns:1fr 1fr}.condition{padding:15px}.condition .dot{margin-bottom:18px}.form-card{padding:24px}.footer-grid,.footer-bottom{flex-direction:column}.float-wa{width:52px;height:52px;right:16px;bottom:80px}.mobile-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:80}.mobile-cta a{width:100%;background:var(--cream);color:#0a2018;text-align:center;padding:13px;border-radius:999px;text-decoration:none;font-weight:800;font-size:13px;box-shadow:0 15px 35px rgba(0,0,0,.3)}}
+
+    .pricing-box{margin:0 0 24px;padding:18px;border:1px solid rgba(19,38,28,.10);border-radius:18px;background:#f2f1e9}
+    .pricing-title{font:700 10px 'Space Grotesk';letter-spacing:.09em;text-transform:uppercase;color:#52635a;margin:0 0 11px}
+    .price-options{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .price-option{position:relative}
+    .price-option input{position:absolute;opacity:0;pointer-events:none}
+    .price-option label{display:block;height:100%;padding:12px 9px;border:1px solid #d7dbd2;border-radius:13px;background:#fbfaf6;text-align:center;cursor:pointer;transition:.2s}
+    .price-option label:hover{border-color:#6ca77e;transform:translateY(-1px)}
+    .price-option input:checked+label{border-color:#4d9367;background:#e8f3eb;box-shadow:0 0 0 3px rgba(109,183,134,.12)}
+    .price-option strong{display:block;font:700 15px 'Space Grotesk';color:#13261c}
+    .price-option span{display:block;margin-top:3px;color:#718078;font-size:10px}
+    .confirmation-card{display:none;margin-top:14px;padding:18px;border-radius:18px;background:#e2f3e7;color:#215b36;border:1px solid #c7e5d0}
+    .confirmation-card.show{display:block;animation:confirmIn .35s ease both}
+    .confirmation-card strong{display:block;font:600 21px 'Playfair Display';margin-bottom:5px;color:#163e28}
+    .confirmation-card p{margin:0;color:#386b4a;font-size:13px;line-height:1.55}
+    .confirmation-actions{margin-top:12px}.confirmation-actions button{border:0;background:transparent;color:#215b36;font:700 11px 'Space Grotesk';text-decoration:underline;cursor:pointer;padding:0}    .confirmation-meta{margin-top:10px;padding-top:10px;border-top:1px solid rgba(33,91,54,.14);font-size:11px}
+    @keyframes confirmIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    @media(max-width:620px){.price-options{grid-template-columns:1fr}.price-option label{display:flex;align-items:center;justify-content:space-between;text-align:left}.price-option span{margin-top:0}}
   </style>
 </head>
 <body>
@@ -44,32 +62,32 @@
       <div class="wrap hero-grid">
         <div class="reveal">
           <div class="kicker">Gengold · Herbal eye care</div>
-          <h1>Let your eyes feel very much <em>WONDERFUL!!!</em></h1>
-          <p class="hero-copy">Eye Wonder+ is designed around a solid proof: everyday eye comfort should feel effortless. A herbal eye-treatment formula for tired, strained and uncomfortable eyes.</p>
+          <h1>Let your eyes feel a little more <em>wonderful.</em></h1>
+          <p class="hero-copy">Eye Wonder+ is designed around a core fundamental idea: everyday eye comfort should feel effortless. A herbal eye-cure/care formula for myopia, glaucouma, blurry vision and other eye concerns.</p>
           <div class="hero-actions"><a class="btn btn-primary" href="#order">Request your bottle <span>↗</span></a><a class="btn btn-ghost" href="#experience">Explore Eye Wonder+</a></div>
-          <div class="hero-trust"><span><i></i>100% natural formula</span><span><i></i>NAFDAC registered</span><span><i></i>Made for all</span><span><i></i>Made by a Photochemist with over 25 years experience</span></div>
+          <div class="hero-trust"><span><i></i>100% natural formula</span><span><i></i>NAFDAC registered</span><span><i></i>Made for all</span><span><i></i>Made by a Phytochemist for a permanent solution</span></div>
         </div>
         <div class="hero-stage reveal">
           <div class="orb"></div><div class="orbit"></div><div class="video-glow"></div>
           <div class="float-card fc1"><strong>Daily comfort</strong>For eyes that work hard.</div>
-          <div class="float-card fc2"><strong>Gengold Eye Wonder+</strong>Herbal eye drops.</div>
+          <div class="float-card fc2"><strong>Gengold Eye Wonder+</strong>Herbal natural eye drops.</div>
           <div class="video-shell">
             <video autoplay muted loop playsinline preload="metadata" poster="assets/video-poster.jpg"><source src="assets/eye-wonder-ad.mp4" type="video/mp4"></video>
           </div>
         </div>
       </div>
-      <div class="scroll-cue">Scroll to discover</div>
+      <div class="scroll-cue">Scroll to discover more</div>
     </section>
 
     <div class="marquee"><div class="marquee-track"><span>Gengold Eye Wonder+ <b>✦</b></span><span>Herbal eye care <b>✦</b></span><span>Crystal clear natural <b>✦</b></span><span>Everyday eye comfort <b>✦</b></span><span>Gengold Eye Wonder+ <b>✦</b></span><span>Herbal eye care <b>✦</b></span><span>Crystal clear natural <b>✦</b></span><span>Everyday eye comfort <b>✦</b></span></div></div>
 
     <section class="experience" id="experience">
       <div class="wrap">
-        <div class="section-head reveal"><div class="eyebrow">The experience</div><h2>A modern natural cure for eyes that never stop.</h2><p>Long screens. Dust. Sun. Study. Work. Life. Eye Wonder+ fits naturally into the moments when your eyes need a little more attention.</p></div>
+        <div class="section-head reveal"><div class="eyebrow">The experience</div><h2>A modern natural solution for eyes that never stop.</h2><p>Long screens. Dust. Sun. Study. Work. Life. Eye Wonder+ fits naturally into the moments when your eyes needs attention.</p></div>
         <div class="experience-grid">
           <article class="feature big reveal"><span class="feature-num">01 / COMFORT</span><div class="eye-orb"></div><h3>See the difference in how your day <em class="serif gold">feels.</em></h3><p>A calm, premium visual experience built around the eye — because eye care should feel considered, not clinical.</p></article>
-          <article class="feature reveal"><span class="feature-num">02 / FORMULA</span><h3>Herbal by nature.</h3><p>Eye Wonder+ is presented as a natural herbal eye-care formula made for everyday comfort and freshness.</p></article>
-          <article class="feature reveal"><span class="feature-num">03 / ROUTINE</span><h3>Fully Repair Eye Damage.</h3><p>Made to Return your EYES to prestine condition. Permenent cure with nature. Build eye care into the rhythm of your day.</p></article>
+          <article class="feature reveal"><span class="feature-num">02 / FORMULA</span><h3>Herbal by nature.</h3><p>Eye Wonder+ is a natural herbal eye-cure formula made for everyday comfort and keep your eyes fresh.</p></article>
+          <article class="feature reveal"><span class="feature-num">03 / Wonderful</span><h3>Return eyes your to it's natural state.</h3><p>After using this eye drop, your eyes would return to its natural crystal clear state, and you would not need glasses or other visual aids anymore.</p></article>
         </div>
       </div>
     </section>
@@ -79,56 +97,80 @@
         <div class="section-head reveal"><div class="eyebrow">The real bottle</div><h2>Premium presentation. Real product.</h2><p>See the actual Gengold Eye Wonder+ bottle and the registration details printed on the product.</p></div>
         <div class="proof-grid">
           <div class="product-frame reveal"><img src="assets/product-crop.jpg" alt="Real Gengold Eye Wonder+ herbal eye drops bottle"></div>
-          <div class="proof-copy reveal"><h3>Authentic and Original design.</h3><p>The landing page uses the real product imagery, so you can see our authentic product that you are requesting for.</p><div class="facts"><div class="fact"><small>NAFDAC Reg. No.</small><strong>A8-201947</strong></div><div class="fact"><small>Batch No.</small><strong>DNC/06/2026</strong></div><div class="fact"><small>Manufactured</small><strong>June 2026</strong></div><div class="fact"><small>Expiry</small><strong>June 2029</strong></div></div><a class="btn btn-primary" href="#order">Request Eye Wonder+ ↗</a></div>
+          <div class="proof-copy reveal"><h3>Nothing hidden behind the design.</h3><p>You get exactly what you order, wouldbe satisfied and would share with friends and family to also get eyewonder+.</p><div class="facts"><div class="fact"><small>NAFDAC Reg. No.</small><strong>A8-201947</strong></div><div class="fact"><small>Batch No.</small><strong>DNC/06/2026</strong></div><div class="fact"><small>Manufactured</small><strong>June 2026</strong></div><div class="fact"><small>Expiry</small><strong>June 2029</strong></div></div><a class="btn btn-primary" href="#order">Request Eye Wonder+ ↗</a></div>
         </div>
       </div>
     </section>
 
     <section class="conditions">
       <div class="wrap">
-        <div class="section-head reveal"><div class="eyebrow">Everyday concerns</div><h2>Made for the moments your eyes ask for attention.</h2><p>Eye Wonder+ is positioned for everyday eye comfort — while professional eye care remains important for persistent or diagnosed conditions.</p></div>
+        <div class="section-head reveal"><div class="eyebrow">Everyday concerns</div><h2>Made for the moments your eyes ask for attention.</h2><p>Eye Wonder+ is positioned for professional natural eye care and remains important for persistent or diagnosed conditions.</p></div>
         <div class="condition-grid">
           <div class="condition reveal"><div class="dot"></div><strong>Redness & irritation</strong><p>For everyday discomfort.</p></div>
           <div class="condition reveal"><div class="dot"></div><strong>Itching & discomfort</strong><p>A soothing part of your routine.</p></div>
           <div class="condition reveal"><div class="dot"></div><strong>Blurry, strained vision</strong><p>For eyes that feel overworked.</p></div>
-          <div class="condition reveal"><div class="dot"></div><strong>Tired, overworked eyes</strong><p>After long days and screens.</p></div>
+          <div class="condition reveal"><div class="dot"></div><strong>Tired, overworked, strained eyes</strong><p>After long days and screens.</p></div>
           <div class="condition reveal"><div class="dot"></div><strong>Dryness & cleansing</strong><p>For a refreshed feeling.</p></div>
-          <div class="condition reveal"><div class="dot"></div><strong>Everyday eye hygiene</strong><p>Keep your routine simple.</p></div>
-          <div class="condition reveal"><div class="dot"></div><strong>Glaucoma, cataracts & myopia Cure</strong><p>Totally cures eye sickness and return eyes to natural state</p></div>
-          <div class="condition reveal"><div class="dot"></div><strong>Repair eye damage</strong><p>Return eyes to their natural state.</p></div>
+          <div class="condition reveal"><div class="dot"></div><strong>Natural cure for glaucoma, myopia cataracts </strong><p>Cure for these conditions.</p></div>
+          <div class="condition reveal"><div class="dot"></div><strong>General eye wellness</strong><p>Part of everyday care.</p></div>
+          <div class="condition reveal"><div class="dot"></div><strong>E.t.c</strong><p>And many more...</p></div>
         </div>
       </div>
     </section>
 
     <section class="how" id="how">
       <div class="wrap">
-        <div class="section-head reveal"><div class="eyebrow">Simple Natural Solution</div><h2>Four small steps.</h2><p>Keep your routine clean, consistent and aligned with the product directions.</p></div>
+        <div class="section-head reveal"><div class="eyebrow">Highly efficent drops</div><h2>Four small steps.</h2><p>Keep your routine clean, consistent and aligned with the product directions.</p></div>
         <div class="how-grid">
           <div class="step reveal"><b>01 — PREPARE</b><h3>Wash hands.</h3><p>Clean your hands thoroughly before opening the bottle.</p></div>
-          <div class="step reveal"><b>02 — APPLY</b><h3>Use as directed.</h3><p>Apply the 2 drops directly on the eye.</p></div>
-          <div class="step reveal"><b>03 — CONSISTENCY</b><h3>Stay consistent.</h3><p>Use morning and evening, daily for the best experience.</p></div>
-          <div class="step reveal"><b>04 — STORE</b><h3>Keep it well.</h3><p>Store in a cool, dry place away from direct sunlight, And away from children.</p></div>
+          <div class="step reveal"><b>02 — APPLY</b><h3>Use as directed.</h3><p>Apply 2 drops twice per day, per eye directly.</p></div>
+          <div class="step reveal"><b>03 — CONSISTENCY</b><h3>Stay consistent.</h3><p>Use daily for the best experience.</p></div>
+          <div class="step reveal"><b>04 — STORE</b><h3>Keep it well.</h3><p>Store in a cool, dry place away from direct sunlight, away from from children.</p></div>
         </div>
       </div>
     </section>
 
     <section class="lead-section" id="order">
       <div class="wrap lead-grid">
-        <div class="lead-copy reveal"><div class="eyebrow">Ready when you are</div><h2>Put better eye care within reach.</h2><p>Leave your details below and the Gengold team can confirm your request directly with you on WhatsApp.</p><ul class="lead-list"><li><span class="check">✓</span>No online payment required to submit a request.</li><li><span class="check">✓</span>Nationwide delivery can be discussed with the team.</li><li><span class="check">✓</span>Your details are used to follow up about your request.</li></ul><div class="privacy">Gengold Eye Wonder+ is a herbal eye-care product. It is not a substitute for professional diagnosis or prescribed treatment. For persistent pain, vision loss or diagnosed eye conditions, consult a qualified eye-care professional.</div></div>
+        <div class="lead-copy reveal"><div class="eyebrow">Ready when you are</div><h2>Put better eye care within reach.</h2><p>Leave your details below and the Gengold team can confirm your request directly with you on WhatsApp or call(only fill the form if you are interested and ready please).</p><ul class="lead-list"><li><span class="check">✓</span>No online payment required to submit a request.</li><li><span class="check">✓</span>Nationwide delivery can be discussed with the team.</li><li><span class="check">✓</span>Your details are used to follow up about your request.</li></ul><div class="privacy">Gengold Eye Wonder+ is a natural herbal eye-care/cure product.</div></div>
         <div class="form-card reveal">
           <h3>Request your bottle</h3><p class="sub">Takes less than a minute.</p>
           <form id="lead-form">
+
+            <div class="pricing-box" aria-labelledby="pricing-title">
+              <p class="pricing-title" id="pricing-title">Choose your pack</p>
+              <div class="price-options">
+                <div class="price-option">
+                  <input id="pack-1" type="radio" name="pack" value="1" data-price="12000" data-label="1 bottle — ₦12,000" checked>
+                  <label for="pack-1"><strong>₦12,000</strong><span>1 bottle</span></label>
+                </div>
+                <div class="price-option">
+                  <input id="pack-2" type="radio" name="pack" value="2" data-price="20000" data-label="2 bottles — ₦20,000">
+                  <label for="pack-2"><strong>₦20,000</strong><span>2 bottles</span></label>
+                </div>
+                <div class="price-option">
+                  <input id="pack-3" type="radio" name="pack" value="3" data-price="27000" data-label="3 bottles — ₦27,000">
+                  <label for="pack-3"><strong>₦27,000</strong><span>3 bottles</span></label>
+                </div>
+              </div>
+            </div>
             <input class="hp" name="company" tabindex="-1" autocomplete="off">
             <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term"><input type="hidden" name="fbclid">
             <div class="field"><label for="name">Full name</label><input id="name" name="name" required autocomplete="name" placeholder="e.g. Amaka Johnson"></div>
-            <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="e.g. 234 812 345 6789"></div>
+            <div class="field"><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" type="tel" required autocomplete="tel" placeholder="e.g. 0812 345 6789"></div>
             <div class="field"><label for="email">Email <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="e.g. amaka@example.com"></div>
             <div class="field"><label for="city">City / State</label><input id="city" name="city" required autocomplete="address-level2" placeholder="e.g. Lagos"></div>
             <div class="field"><label for="concern">What are you looking for help with? <span style="font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label><textarea id="concern" name="concern" placeholder="e.g. tired eyes, redness, itching"></textarea></div>
             <button class="btn btn-primary submit" id="submit-btn" type="submit">Request my bottle <span>↗</span></button>
             <div class="form-msg" id="form-msg" role="status"></div>
           </form>
-          <p class="form-note">By submitting, you agree to be contacted by phone, Email or WhatsApp about your request.</p>
+
+          <div class="confirmation-card" id="confirmation-card" role="status" aria-live="polite">
+            <strong>Request received ✓</strong>
+            <p>Thank you. Your request has been sent successfully.</p>
+            <div class="confirmation-meta" id="confirmation-meta"></div><div class="confirmation-actions"><button type="button" id="new-request">Make another request</button></div>
+          </div>
+          <p class="form-note">By submitting, you agree to be contacted by phone or WhatsApp about your request.</p>
         </div>
       </div>
     </section>
@@ -136,7 +178,7 @@
 
   <footer><div class="wrap">
     <div class="footer-grid"><div class="footer-brand">Gengold <span class="gold">Eye Wonder+</span></div><a class="btn btn-ghost" id="footer-wa" href="#order">Message us on WhatsApp</a></div>
-    <p class="footer-copy">Gengold Eye Wonder+ is a herbal eye-care product (NAFDAC Reg. No. A8-201947). It is intended to cure hindrances to general eye comfort and can be a substitute for professional medical diagnosis or treatment. If you experience persistent pain, vision loss, or have a diagnosed eye condition, consult a qualified eye-care professional before use.</p>
+    <p class="footer-copy">Gengold Eye Wonder+ is a herbal eye-care product (NAFDAC Reg. No. A8-201947). It is intended to cure and achieve general eye comfort and treatment.</p>
     <div class="footer-bottom"><span>© <span id="year"></span> Gengold. All rights reserved.</span><span>Designed for direct-response campaigns.</span></div>
   </div></footer>
 
@@ -162,21 +204,105 @@
     ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'].forEach(k=>{const el=document.querySelector(`[name="${k}"]`);if(el)el.value=params.get(k)||''});
 
     const form=document.getElementById('lead-form'), msg=document.getElementById('form-msg'), btn=document.getElementById('submit-btn');
+    const confirmation=document.getElementById('confirmation-card'), confirmationMeta=document.getElementById('confirmation-meta');
     form.addEventListener('submit',async e=>{
-      e.preventDefault(); msg.className='form-msg'; msg.textContent='';
+      e.preventDefault();
+      msg.className='form-msg';
+      msg.textContent='';
+
       const data=Object.fromEntries(new FormData(form).entries());
       if(data.company)return;
-      if(!data.name||!data.phone||!data.city){msg.textContent='Please complete your name, phone number and city.';msg.className='form-msg err';return}
-      btn.disabled=true;btn.innerHTML='Sending…';
+
+      if(!data.name||!data.phone||!data.city){
+        msg.textContent='Please complete your name, phone number and city.';
+        msg.className='form-msg err';
+        return;
+      }
+
+      const email=(data.email||'').trim();
+      if(email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+        msg.textContent='Please enter a valid email address, or leave it blank.';
+        msg.className='form-msg err';
+        return;
+      }
+
+      const selectedPack=form.querySelector('input[name="pack"]:checked');
+      if(!selectedPack){
+        msg.textContent='Please choose a pack before submitting your request.';
+        msg.className='form-msg err';
+        return;
+      }
+
+      const packLabel=selectedPack.dataset.label;
+      const packPrice=Number(selectedPack.dataset.price);
+
+      btn.disabled=true;
+      btn.innerHTML='Sending…';
+
+      // Open a tab from the click event so browsers are less likely to block WhatsApp later.
+      let whatsappWindow=null;
+      try{ whatsappWindow=window.open('about:blank','_blank'); }catch(e){}
+
       try{
-        const r=await fetch('/api/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...data,product:'Gengold Eye Wonder+',source:'meta_landing_page'})});
-        if(!r.ok)throw new Error('submit failed');
-        msg.textContent='You\'re in. Your request has been received — opening WhatsApp to confirm.';msg.className='form-msg ok';
-        let number=DEFAULT_WHATSAPP;try{const s=await fetch('/api/settings');if(s.ok){const d=await s.json();if(d.whatsapp)number=d.whatsapp}}catch(e){}
-        const text=`Hi, I'm ${data.name} from ${data.city}. I just requested Gengold Eye Wonder+ on the website.`;
-        setTimeout(()=>window.open(waLink(number,text),'_blank','noopener'),250); form.reset();
-      }catch(err){msg.textContent='Something went wrong. Please try again or message us directly on WhatsApp.';msg.className='form-msg err'}
-      finally{btn.disabled=false;btn.innerHTML='Request my bottle <span>↗</span>'}
+        const r=await fetch('/api/submit',{
+          method:'POST',
+          headers:{'Content-Type':'application/json','Accept':'application/json'},
+          body:JSON.stringify({...data,product:'Gengold Eye Wonder+',source:'meta_landing_page',pack:selectedPack.value,pack_label:packLabel,pack_price:packPrice})
+        });
+
+        let result={};
+        try{ result=await r.json(); }catch(e){}
+
+        if(!r.ok){
+          throw new Error(result.error || 'We could not save your request.');
+        }
+
+        msg.textContent='You\'re in. Your request has been received — opening WhatsApp to confirm.';
+        msg.className='form-msg ok';
+        confirmationMeta.textContent=`Selected: ${packLabel}`;
+        confirmation.classList.add('show');
+
+        let number=DEFAULT_WHATSAPP;
+        try{
+          const s=await fetch('/api/settings',{headers:{'Accept':'application/json'}});
+          if(s.ok){
+            const d=await s.json();
+            if(d.whatsapp)number=d.whatsapp;
+          }
+        }catch(e){}
+
+        const text=`Hi, I'm ${data.name} from ${data.city}. I just requested Gengold Eye Wonder+ on the website. ${packLabel}.`;
+        const url=waLink(number,text);
+
+        if(whatsappWindow && !whatsappWindow.closed){
+          whatsappWindow.location.href=url;
+        }else{
+          window.location.href=url;
+        }
+
+        form.querySelectorAll('input:not([type="hidden"]):not([type="radio"]), textarea').forEach(el=>el.disabled=true);
+        form.querySelectorAll('input[name="pack"]').forEach(el=>el.disabled=true);
+      }catch(err){
+        if(whatsappWindow && !whatsappWindow.closed){
+          whatsappWindow.close();
+        }
+        console.error('Lead submission failed:',err);
+        msg.textContent=err.message || 'Something went wrong. Please try again or message us directly on WhatsApp.';
+        msg.className='form-msg err';
+      }finally{
+        btn.disabled=false;
+        btn.innerHTML='Request my bottle <span>↗</span>';
+      }
+    });
+
+    document.getElementById('new-request').addEventListener('click',()=>{
+      form.reset();
+      form.querySelectorAll('input, textarea, button').forEach(el=>el.disabled=false);
+      document.getElementById('pack-1').checked=true;
+      confirmation.classList.remove('show');
+      msg.className='form-msg';
+      msg.textContent='';
+      document.getElementById('order').scrollIntoView({behavior:'smooth',block:'center'});
     });
 
     const observer=new IntersectionObserver(entries=>entries.forEach(x=>{if(x.isIntersecting)x.target.classList.add('in')}),{threshold:.12});

@@ -106,3 +106,12 @@ Those values are saved with each lead and shown in the admin dashboard.
 ## Important product/advertising note
 
 Keep Meta ad copy and landing-page claims consistent with your approved product/label documentation and applicable advertising rules. The landing page is intentionally written around general eye comfort rather than promising treatment or cure of diagnosed eye diseases.
+
+
+## Production deployment checklist
+
+1. Keep `.env.example` as a template; never commit a real `.env` or Firebase service-account JSON.
+2. In Vercel, set `FIREBASE_PROJECT_ID`, `FIREBASE_CLIENT_EMAIL`, `FIREBASE_PRIVATE_KEY`, and `ADMIN_BOOTSTRAP_KEY` for the environment being tested.
+3. Redeploy after changing Vercel environment variables.
+4. Test the live `/admin` URL and the landing-page form on the deployed domain.
+5. The email field is optional. If supplied, it is validated in both the browser and API and saved to Firestore.
